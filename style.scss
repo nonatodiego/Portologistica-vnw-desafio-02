@@ -25,9 +25,16 @@ header {
   height: $header-height;
   font-family: $font-family;
   padding: $padding;
+
+  // Heading
+  h2 {
+  width: 40%;
+  font-weight: 700;
+  font-size: $font-size-large;
+  }
 }
 
-// Navigation
+// Nav
 nav {
   width: 50%;
 
@@ -49,12 +56,7 @@ nav {
   }
 }
 
-// Heading
-h2 {
-  width: 40%;
-  font-weight: 700;
-  font-size: $font-size-large;
-}
+
 
 // Button
 button {
