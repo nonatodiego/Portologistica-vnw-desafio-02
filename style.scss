@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+// Variáveis
+$font-family: "Oswald", sans-serif;
+$primary-color: #5B5B5B;
+$header-height: 15vh;
+$padding: 2rem;
+$button-padding: 1.25rem;
+$font-size-large: 2.5rem;
+$font-size-medium: 1.5rem;
+$font-size-small: 20px;
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Header
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: $header-height;
+  font-family: $font-family;
+  padding: $padding;
+}
+
+// Navigation
+nav {
+  width: 50%;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 80%;
+
+    li {
+      font-weight: 500;
+      font-size: $font-size-small;
+
+      a {
+        text-decoration: none;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+// Heading
+h2 {
+  width: 40%;
+  font-weight: 700;
+  font-size: $font-size-large;
+}
+
+// Button
+button {
+  width: 10%;
+  padding: $button-padding;
+  font-size: $font-size-medium;
+  text-align: center;
+}
+
