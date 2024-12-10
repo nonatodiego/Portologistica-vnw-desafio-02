@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap,https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 // Variables
-$font-family: "Oswald", sans-serif;
-$font-family-secundary: "Roboto", sans-serif;
-$primary-color: #5B5B5B;
+$font-family-primary: "Oswald", sans-serif;
+$font-family-secondary: "Roboto", sans-serif;
+$color-primary: #5B5B5B;
+$color-blue: #0017E9;
 $header-height: 14vh;
 $main-height: 86vh;
-$padding: 3rem;
-$button-padding: .875rem;
-$font-size-large: 2.5rem; //40px
-$font-size-medium: 1.5rem; //24px
-$font-size-small: 1.25rem; //20px
-$blue-color: #0017E9;
+$padding-default: 3rem;
+$padding-button: .875rem;
+$font-size-large: 2.5rem; // 40px
+$font-size-medium: 1.5rem; // 24px
+$font-size-small: 1.25rem; // 20px
 
 // Reset
 * {
@@ -26,15 +26,14 @@ header {
   justify-content: space-around;
   align-items: center;
   height: $header-height;
-  font-family: $font-family;
-  padding: $padding;
-
+  font-family: $font-family-primary;
+  padding: $padding-default;
 
   // Heading
   h2 {
-  width: 40%;
-  font-weight: 700;
-  font-size: $font-size-large;
+    width: 40%;
+    font-weight: 700;
+    font-size: $font-size-large;
   }
 }
 
@@ -54,19 +53,17 @@ nav {
 
       a {
         text-decoration: none;
-        color: $primary-color;
+        color: $color-primary;
       }
     }
   }
 }
 
-
-
 // Button
 button {
-  font-family: $font-family;
+  font-family: $font-family-primary;
   color: #000;
-  padding: $button-padding;
+  padding: $padding-button;
   font-size: $font-size-medium;
   text-align: center;
   cursor: pointer;
@@ -75,21 +72,18 @@ button {
   border: 3px solid #000;
 }
 
+// Main
 main {
-  background:  linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(imagens/background.png);
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(imagens/background.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: $main-height;
-  font-family: $font-family;
+  font-family: $font-family-primary;
   color: #fff;
-
-  border: 1px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: $padding;
-
+  padding: $padding-default;
 
   h1 {
     font-size: 6rem;
@@ -107,7 +101,6 @@ main {
     color: #fff;
     font-weight: 700;
     font-size: 1.5rem;
-
     background-color: #0016DF;
     width: 16.34vw;
     text-align: center;
@@ -116,75 +109,67 @@ main {
   }
 }
 
+// Section: Gestão Portuária
 section.gestao-portuaria {
   height: 139vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: $font-family;
-
+  font-family: $font-family-primary;
 
   .descricao {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-
     height: 100vh;
     width: 40%;
 
     h3 {
       font-size: $font-size-medium;
       font-weight: 500;
-      color: $blue-color;
+      color: $color-blue;
       margin-bottom: 1.75rem;
-
     }
-    
+
     h4 {
-      font-family: $font-family-secundary;
+      font-family: $font-family-secondary;
       font-weight: 800;
       font-size: 2.25rem;
       margin-bottom: 2.563rem;
-
       width: 80%;
     }
 
     p {
-      font-family: $font-family-secundary;
+      font-family: $font-family-secondary;
       font-size: $font-size-medium;
       font-weight: 400;
       text-align: justify;
-
       width: 80%;
       height: 56vh;
-
     }
 
     a {
       text-decoration: none;
-      color: $blue-color;
+      color: $color-blue;
       font-weight: 400;
       font-size: $font-size-medium;
       text-align: center;
     }
   }
-
-
-
-  
 }
 
+// Section: Soluções
 section.solucoes {
   height: 139vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: $font-family;
+  font-family: $font-family-primary;
   background-color: #D8D8D8;
 
-  h3,h4 {
+  h3, h4 {
     font-size: $font-size-medium;
     font-weight: 500;
     text-transform: uppercase;
@@ -193,19 +178,19 @@ section.solucoes {
 
   h3 {
     margin: 4rem 0 1.875rem 0;
-    color: $blue-color;
+    color: $color-blue;
   }
+
   .cards {
     display: flex;
     justify-content: center;
     gap: 2rem;
-
     margin-top: 15vh;
 
     .card {
       background-color: #fff;
       border-radius: 0.5rem;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
       width: 300px;
       text-align: left;
 
@@ -219,7 +204,7 @@ section.solucoes {
         padding: 1rem;
         display: flex;
         flex-direction: column;
-        align-items: start; // Align items to the start
+        align-items: start;
 
         .card-titulo {
           text-transform: none;
@@ -234,6 +219,91 @@ section.solucoes {
       }
     }
   }
-  
+}
+
+// Section: Atendimento
+section.atendimento {
+  display: flex;
+  justify-content: space-evenly;
+  height: 139vh;
+  font-family: $font-family-primary;
+  margin-top: 7rem;
+  text-transform: uppercase;
+
+  h2 {
+    font-size: 2rem;
+    color: $color-blue;
+    font-weight: 500;
+    margin-bottom: .5rem;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: $font-size-medium;
+    margin-bottom: 2.313rem;
+  }
+
+  .atendimento-comercial {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    .galeria-fotos {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      gap: 2rem;
+      margin-top: 2.5rem;
+
+      figcaption {
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .fale-conosco {
+    display: flex;
+    flex-direction: column;
+
+    .formulario {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: 1.25rem;
+        font-weight: 300;
+      }
+
+      input {
+        margin-bottom: 1.5rem;
+        height: 2rem;
+        border: 1px solid #000;
+      }
+    }
+
+    a {
+      margin-top: 3.75rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.5rem;
+      background-color: $color-blue;
+      text-align: center;
+      padding: .875rem;
+    }
+  }
+}
+
+// Footer
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9vh;
+  font-family: $font-family-primary;
+  background-color: #D8D8D8;
+  color: #000;
+  font-size: 0.875rem;
 }
 

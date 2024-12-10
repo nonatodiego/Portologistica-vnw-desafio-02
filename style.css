@@ -56,7 +56,6 @@ main {
   height: 86vh;
   font-family: "Oswald", sans-serif;
   color: #fff;
-  border: 1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,7 +154,7 @@ section.solucoes .cards {
 section.solucoes .cards .card {
   background-color: #fff;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
   width: 300px;
   text-align: left;
 }
@@ -179,4 +178,78 @@ section.solucoes .cards .card .card-conteudo .card-titulo {
 section.solucoes .cards .card .card-conteudo .card-descricao {
   font-size: 1.5rem;
   font-weight: 200;
+}
+
+section.atendimento {
+  display: flex;
+  justify-content: space-evenly;
+  height: 139vh;
+  font-family: "Oswald", sans-serif;
+  margin-top: 7rem;
+  text-transform: uppercase;
+}
+section.atendimento h2 {
+  font-size: 2rem;
+  color: #0017E9;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+section.atendimento h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 2.313rem;
+}
+section.atendimento .atendimento-comercial {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+section.atendimento .atendimento-comercial .galeria-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+section.atendimento .atendimento-comercial .galeria-fotos figcaption {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+section.atendimento .fale-conosco {
+  display: flex;
+  flex-direction: column;
+}
+section.atendimento .fale-conosco .formulario {
+  display: flex;
+  flex-direction: column;
+}
+section.atendimento .fale-conosco .formulario label {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+section.atendimento .fale-conosco .formulario input {
+  margin-bottom: 1.5rem;
+  height: 2rem;
+  border: 1px solid #000;
+}
+section.atendimento .fale-conosco a {
+  margin-top: 3.75rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: #0017E9;
+  text-align: center;
+  padding: 0.875rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9vh;
+  font-family: "Oswald", sans-serif;
+  background-color: #D8D8D8;
+  color: #000;
+  font-size: 0.875rem;
 }/*# sourceMappingURL=style.css.map */
