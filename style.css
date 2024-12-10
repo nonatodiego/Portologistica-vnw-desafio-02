@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap,https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +9,9 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 15vh;
+  height: 14vh;
   font-family: "Oswald", sans-serif;
-  padding: 2rem;
+  padding: 3rem;
 }
 header h2 {
   width: 40%;
@@ -30,7 +30,7 @@ nav ul {
 }
 nav ul li {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 nav ul li a {
   text-decoration: none;
@@ -38,8 +38,145 @@ nav ul li a {
 }
 
 button {
-  width: 10%;
-  padding: 1.25rem;
+  font-family: "Oswald", sans-serif;
+  color: #000;
+  padding: 0.875rem;
   font-size: 1.5rem;
   text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: transparent;
+  border: 3px solid #000;
+}
+
+main {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imagens/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 86vh;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  border: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+main h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+main p {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 1.875rem;
+}
+main a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: #0016DF;
+  width: 16.34vw;
+  text-align: center;
+  padding: 0.875rem;
+  margin-left: 1.875rem;
+}
+
+section.gestao-portuaria {
+  height: 139vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+}
+section.gestao-portuaria .descricao {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: 100vh;
+  width: 40%;
+}
+section.gestao-portuaria .descricao h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #0017E9;
+  margin-bottom: 1.75rem;
+}
+section.gestao-portuaria .descricao h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 2.25rem;
+  margin-bottom: 2.563rem;
+  width: 80%;
+}
+section.gestao-portuaria .descricao p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: justify;
+  width: 80%;
+  height: 56vh;
+}
+section.gestao-portuaria .descricao a {
+  text-decoration: none;
+  color: #0017E9;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+section.solucoes {
+  height: 139vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  background-color: #D8D8D8;
+}
+section.solucoes h3, section.solucoes h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+section.solucoes h3 {
+  margin: 4rem 0 1.875rem 0;
+  color: #0017E9;
+}
+section.solucoes .cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 15vh;
+}
+section.solucoes .cards .card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+}
+section.solucoes .cards .card .card-imagem {
+  width: 100%;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.solucoes .cards .card .card-conteudo {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+section.solucoes .cards .card .card-conteudo .card-titulo {
+  text-transform: none;
+  font-size: 1.5rem;
+  margin-bottom: 1.438rem;
+}
+section.solucoes .cards .card .card-conteudo .card-descricao {
+  font-size: 1.5rem;
+  font-weight: 200;
 }/*# sourceMappingURL=style.css.map */
