@@ -19,6 +19,22 @@ header h2 {
   font-size: 2.5rem;
 }
 
+@media (max-width: 800px) {
+  h2, button {
+    display: none;
+  }
+  nav {
+    border: 1px solid yellow;
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 nav {
   width: 50%;
 }
@@ -82,6 +98,28 @@ main a {
   margin-left: 1.875rem;
 }
 
+@media (max-width: 800px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2.5rem;
+    border: 1px solid yellow;
+  }
+  main h1 {
+    font-size: 2.25rem;
+  }
+  main p, main a {
+    text-align: center;
+    font-size: 1rem;
+  }
+  main a {
+    margin: 0;
+    padding: 0.5rem;
+    width: 9.75rem;
+  }
+}
 section.gestao-portuaria {
   height: 139vh;
   display: flex;
@@ -127,6 +165,25 @@ section.gestao-portuaria .descricao a {
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  section.gestao-portuaria {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 220vh;
+    width: 10%;
+    border-left: 1px solid gold;
+    margin: 0 auto;
+  }
+  section.gestao-portuaria h3 {
+    font-size: 1rem;
+    border: 1px solid red;
+  }
+  section.gestao-portuaria p {
+    font-size: 0.875rem;
+  }
+}
 section.solucoes {
   height: 139vh;
   display: flex;
