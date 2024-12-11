@@ -37,24 +37,6 @@ header {
   }
 }
 
-@media (max-width:800px) {
-  
-  h2, button {
-    display: none;
-  }
-  nav {
-    border: 1px solid yellow;
-    width: 100%;
-    margin-top: 2.5rem;
-    ul {      
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  }  
- }
-
 // Nav
 nav {
   width: 50%;
@@ -127,42 +109,19 @@ main {
   }
 }
 
-@media (max-width:800px) {
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 2.5rem;    
-    border: 1px solid yellow;
-
-    h1 {
-      font-size: 2.25rem;
-    }
-
-    p,a {
-      text-align: center;
-      font-size: 1rem;
-    }
-
-    a {
-      margin: 0;
-      padding: .5rem;
-      width: 9.75rem;
-    }
-  }
-}
 
 // Section: Gestão Portuária
 section.gestao-portuaria {
   margin-top: 20px;
-  height: 139vh;
+  // height: 139vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   font-family: $font-family-primary;
   gap: 20px;
+
+  padding: 5rem;
 
 
   .descricao {
@@ -205,6 +164,7 @@ section.gestao-portuaria {
       font-weight: 400;
       font-size: $font-size-medium;
       // text-align: center;
+      margin-top: 80px;
       margin-bottom: 20px;
       // height: 56vh;
       // border: 1px solid yellow;
@@ -212,29 +172,6 @@ section.gestao-portuaria {
   }
 }
 
-@media (max-width:800px) {
-  section.gestao-portuaria {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    height: 220vh;
-    width: 10%;
-    border-left: 1px solid gold;
-    margin: 0 auto;
-
-    h3 {
-      font-size: 1rem;
-      // width: 150%;
-      border: 1px solid red;
-    }
-
-    p {
-      font-size: 0.875rem;
-      
-    }
-  }
-}
 
 // Section: Soluções
 section.solucoes {
@@ -322,15 +259,32 @@ section.atendimento {
   .atendimento-comercial {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    max-width: 50%;
     // border: 1px solid red;
 
     .galeria-fotos {
       display: flex;
       flex-wrap: wrap;
-      width: 100%;
       gap: 2rem;
       margin-top: 2.5rem;
+      // border: 1px solid red;
+
+      figure {
+        // width: 100%;
+        margin: 0;
+        // border: 1px solid red;
+
+        img {
+          width: 100%;
+          height: 30vh;
+          object-fit: cover;
+        }
+
+        figcaption {
+          font-size: 1.25rem;
+          font-weight: 500;
+        }
+      }
 
       figcaption {
         font-size: 1.25rem;

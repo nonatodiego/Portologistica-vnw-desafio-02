@@ -19,22 +19,6 @@ header h2 {
   font-size: 2.5rem;
 }
 
-@media (max-width: 800px) {
-  h2, button {
-    display: none;
-  }
-  nav {
-    border: 1px solid yellow;
-    width: 100%;
-    margin-top: 2.5rem;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 nav {
   width: 50%;
 }
@@ -98,37 +82,15 @@ main a {
   margin-left: 1.875rem;
 }
 
-@media (max-width: 800px) {
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 2.5rem;
-    border: 1px solid yellow;
-  }
-  main h1 {
-    font-size: 2.25rem;
-  }
-  main p, main a {
-    text-align: center;
-    font-size: 1rem;
-  }
-  main a {
-    margin: 0;
-    padding: 0.5rem;
-    width: 9.75rem;
-  }
-}
 section.gestao-portuaria {
   margin-top: 20px;
-  height: 139vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   font-family: "Oswald", sans-serif;
   gap: 20px;
+  padding: 5rem;
 }
 section.gestao-portuaria .descricao {
   display: flex;
@@ -162,28 +124,10 @@ section.gestao-portuaria .descricao a {
   color: #0017E9;
   font-weight: 400;
   font-size: 1.5rem;
+  margin-top: 80px;
   margin-bottom: 20px;
 }
 
-@media (max-width: 800px) {
-  section.gestao-portuaria {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    height: 220vh;
-    width: 10%;
-    border-left: 1px solid gold;
-    margin: 0 auto;
-  }
-  section.gestao-portuaria h3 {
-    font-size: 1rem;
-    border: 1px solid red;
-  }
-  section.gestao-portuaria p {
-    font-size: 0.875rem;
-  }
-}
 section.solucoes {
   height: 139vh;
   display: flex;
@@ -259,14 +203,26 @@ section.atendimento h3 {
 section.atendimento .atendimento-comercial {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  max-width: 50%;
 }
 section.atendimento .atendimento-comercial .galeria-fotos {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   gap: 2rem;
   margin-top: 2.5rem;
+}
+section.atendimento .atendimento-comercial .galeria-fotos figure {
+  margin: 0;
+}
+section.atendimento .atendimento-comercial .galeria-fotos figure img {
+  width: 100%;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.atendimento .atendimento-comercial .galeria-fotos figure figcaption {
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 section.atendimento .atendimento-comercial .galeria-fotos figcaption {
   font-size: 1.25rem;
