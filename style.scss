@@ -155,20 +155,24 @@ main {
 
 // Section: Gestão Portuária
 section.gestao-portuaria {
+  margin-top: 20px;
   height: 139vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   font-family: $font-family-primary;
+  gap: 20px;
+
 
   .descricao {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    height: 100vh;
+    justify-content: center;
+    // align-items: center;
+    height: 100%;
     width: 40%;
+    // border: 1px solid pink;
 
     h3 {
       font-size: $font-size-medium;
@@ -190,8 +194,9 @@ section.gestao-portuaria {
       font-size: $font-size-medium;
       font-weight: 400;
       text-align: justify;
-      width: 80%;
-      height: 56vh;
+      // width: 80%;
+      height: 100%;
+      // border: 1px solid red;
     }
 
     a {
@@ -199,7 +204,10 @@ section.gestao-portuaria {
       color: $color-blue;
       font-weight: 400;
       font-size: $font-size-medium;
-      text-align: center;
+      // text-align: center;
+      margin-bottom: 20px;
+      // height: 56vh;
+      // border: 1px solid yellow;
     }
   }
 }
@@ -315,11 +323,12 @@ section.atendimento {
     display: flex;
     flex-direction: column;
     width: 50%;
+    // border: 1px solid red;
 
     .galeria-fotos {
       display: flex;
       flex-wrap: wrap;
-      width: 80%;
+      width: 100%;
       gap: 2rem;
       margin-top: 2.5rem;
 
